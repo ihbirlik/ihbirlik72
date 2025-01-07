@@ -1,0 +1,474 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.header-wrapper {
+    background-color: black; 
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-container a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-container a:hover {
+    color: #007BFF;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.top-section {
+    background-color: black;
+    height: 10%;
+}
+
+
+.middle-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+}
+
+.center-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.bottom-section {
+    background-color: black;
+    height: 10%;
+}
+
+.footer-wrapper {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 32px;
+    text-decoration: none;
+    color: white;
+}
+
+.logo span {
+    color: rebeccapurple;
+    text-decoration: none;
+}
+
+.navbar-container a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: transparent;
+    transition: background-color 0.3s ease, transform 0.3s ease, border-radius 0.3s ease;
+    display: inline-block;
+    border-radius: 0;
+}
+
+.navbar-container a:hover {
+    color: #007BFF;
+    background-color: black;
+    transform: scale(1.1);
+}
+
+.social-icon {
+    font-size: 2vw;
+    transition: transform 0.3s ease, color 0.3s ease;
+    position: relative;
+    left: 45%;
+}
+
+.social-icon:hover {
+    transform: scale(1.2); 
+    color: #007BFF;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+@media (max-width: 480px) {
+    .footer-content {
+        justify-content: center;
+    }
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.home-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-image-wrapper {
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    animation: moveUpDown 2s ease-in-out infinite;
+}
+
+.profile-img {
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    transition: width 0.3s ease;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translate(-50%, -10%);
+    }
+    50% {
+        transform: translate(-50%, 10%);
+    }
+    100% {
+        transform: translate(-50%, -10%);
+    }
+}
+
+.welcome-text h1 {
+    font-size: 50px;
+    color: #fff;
+}
+
+.welcome-text p {
+    font-size: 20px;
+    color: #fff;
+}
+
+.background-image img {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hobby img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav ul {
+            display: flex;
+            list-style: none;
+            background-color: #333;
+            padding: 10px;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff6347;
+            border-radius: 5px;
+        }
+
+        .header-image {
+            position: relative;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .header-image img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-bottom: 5px solid #333;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header-overlay h1 {
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        section h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .project {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 800px;
+            transition: transform 0.3s ease-in-out;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        .project img {
+            width: 40%;
+            height: auto;
+            border-radius: 5px;
+            margin-right: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .project img:hover {
+            transform: scale(1.1);
+        }
+
+        .project .content {
+            width: 60%;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            text-decoration: none;
+            color: #ff6347;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 768px) {
+            .project {
+                flex-direction: column;
+                width: 90%;
+            }
+
+            .project img {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+            section h1 {
+                font-size: 28px;
+            }
+        }
+
+.hobbies {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  margin-top: 30px;
+}
+
+.hobby {
+  text-align: center;
+  max-width: 250px;
+}
+
+.hobby img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hobby img:hover {
+  transform: scale(1.1);
+}
+
+.hobby p {
+  margin-top: 10px;
+  font-size: 16px;
+
+}
+       
+.hobby-description {
+    display: none;
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    text-align: left;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+   
+}
+
+.contact-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+}
+
+.contact-form-section {
+    width: 50%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-form-section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #f4d03f;
+    box-shadow: 0 0 5px rgba(244, 208, 63, 0.5);
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    section {
+        margin: 100px 10px;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+.hakkımda-image {
+    position: relative;
+    width: 100%;
+    height: 60%;
+}
+
+.hakkımda-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
