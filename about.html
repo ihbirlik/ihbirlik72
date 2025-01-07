@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda | İbrahim Halil Birlik</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header-wrapper">
+        <div class="logo-container">
+            <a href="index.html" class="logo"> İbrahim Halil <span>Birlik</span></a>
+        </div>
+        <nav class="navbar-container">
+            <a href="index.html" class="active">Ana Sayfa</a>
+            <a href="about.html">Hakkımızda</a>
+            <a href="projects.html">Projelerim</a>
+            <a href="contact.html">İletişim</a>
+        </nav>
+    </header>
+
+    <div class="hakkımda-image">
+        <img src="İMG/hakkımızda.jpg" alt="about.html arka plan">
+    </div>
+
+    <section class="about">
+        <h1>Hakkımda</h1>
+        <p>Merhaba! Ben İbrahim Halil Birlik. Bilgisayar mühendisliği 2. sınıf öğrencisiyim ve yazılım geliştirme konusunda istekliyim. Web geliştirme projeleri üzerinde çalışıyorum.</p>
+
+        <h2>Eğitim Geçmişim</h2>
+        <ul>
+            <li>2024 - Bilgisayar Mühendisliği, Batman Üniversitesi</li>
+        </ul>
+
+        <h2>İlgi Alanlarım ve Hobilerim</h2>
+        <div class="hobbies">
+            <div class="hobby" onclick="toggleDescription('coding-description')">
+                <img src="İMG/yazılım.jpg" alt="Hobi 1">
+                <p>Kodlama</p>
+                <div class="hobby-description" id="coding-description">
+                    <p>Bilgisayarımı kullanarak yeni projeler geliştirmek, her seferinde yeni bir şeyler öğrenmek gerçekten heyecan verici. Kod yazarken, her satırda bilgisayara nasıl komut vereceğimi düşünüyorum ve bu süreç bana büyük bir tatmin sağlıyor. Yeni bir şey başarmak, kodların doğru çalıştığını görmek, bana tarif edilemez bir mutluluk veriyor. Bu, sadece bir hobi değil, aynı zamanda tutkum.</p>
+                </div>
+            </div>
+            <div class="hobby" onclick="toggleDescription('photography-description')">
+                <img src="İMG/fotoğraf.jpg" alt="Hobi 2">
+                <p>Fotoğrafçılık</p>
+                <div class="hobby-description" id="photography-description">
+                    <p>Kamera ile her anı ölümsüzleştirmek, dünyayı farklı bir bakış açısıyla görmek gerçekten büyüleyici. Fotoğraf çekerken, ışığın, kompozisyonun ve renklerin nasıl bir araya geldiğini düşünmek, her karede yeni bir hikaye yaratmak bana büyük bir haz veriyor. Her fotoğraf, bir anın izlerini taşıyor ve bu izleri yakalamak, bana tarifsiz bir mutluluk sağlıyor.</p>
+                </div>
+            </div>
+            <div class="hobby" onclick="toggleDescription('swimming-description')">
+                <img src="İMG/yüzme.jpg" alt="Hobi 3">
+                <p>Yüzme</p>
+                <div class="hobby-description" id="swimming-description">
+                    <p>Dünyadan tamamen koparak kendimi özgür hissediyorum. Yüzmek, vücudumla suyun arasındaki dengeyi bulmak ve her kulaçta yeni bir ritim keşfetmek gibi. Su, bana huzur ve enerji veriyor. Hem bedenimi hem de zihnimi dinlendiriyor. Yüzme, aynı zamanda ruhumu tazeleyen bir tutku.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-wrapper">
+        <div class="footer-content">
+            <p>&copy; 2025 İbrahim Halil Birlik. Tüm Hakları Saklıdır</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDescription(id) {
+            var description = document.getElementById(id);
+            description.style.display = (description.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
