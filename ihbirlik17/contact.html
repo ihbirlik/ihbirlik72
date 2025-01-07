@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-wrapper">
+        <div class="logo-container">
+            <a href="index.html" class="logo">İbrahim Halil <span>Birlik</span></a>
+        </div>
+        <nav class="navbar-container">
+            <a href="index.html" class="active">Ana Sayfa</a>
+            <a href="about.html">Hakkımızda</a>
+            <a href="projects.html">Projelerim</a>
+            <a href="contact.html">İletişim</a>
+        </nav>
+    </header>
+
+    <img src="İMG/iletişim (2).jpg" alt="İletişim Görseli" class="contact-image">
+
+    <section class="contact-form-section">
+        <h2>Bizimle İletişime Geçin</h2>
+        <form action="submit_form.php" method="post" onsubmit="return validateForm()">
+            <label for="name">Adınız</label>
+            <input type="text" id="name" name="name" placeholder="Adınızı girin" required>
+            <div id="nameError" class="error"></div>
+
+            <label for="email">E-posta</label>
+            <input type="email" id="email" name="email" placeholder="E-posta adresinizi girin" required>
+            <div id="emailError" class="error"></div>
+
+            <label for="message">Mesajınız</label>
+            <textarea id="message" name="message" placeholder="Mesajınızı yazın" required></textarea>
+            <div id="messageError" class="error"></div>
+
+            <button type="submit" class="submit-button">Gönder</button>
+        </form>
+    </section>
+
+    <footer class="footer-wrapper">
+        <div class="footer-content">
+            <p>&copy; 2025 İbrahim Halil Birlik. Tüm Hakları Saklıdır</p>
+            <div class="social-icons">
+                <a href="https://hayalisite.com" target="_blank" rel="noopener noreferrer" class="social-icon instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://hayalisite.com" target="_blank" rel="noopener noreferrer" class="social-icon facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://hayalisite.com" target="_blank" rel="noopener noreferrer" class="social-icon twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
