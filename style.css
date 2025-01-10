@@ -66,11 +66,11 @@ body, html {
 .logo {
     font-size: 32px;
     text-decoration: none;
-    color: white;
+    color: cyan;
 }
 
 .logo span {
-    color: yellow;
+    color: crimson;
     text-decoration: none;
 }
 
